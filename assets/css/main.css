@@ -773,12 +773,12 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  color: #515151;
-  background-color: #fbfbfb;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lato', sans-serif;
+    color: #515151;
+    background-color: #FF6347 ;/*#fbfbfb*/
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -1000,9 +1000,9 @@ table tfoot td {
   margin: 0 0 10px;
 }
 
-.content-box {
+.content-box {  
   padding: 20px;
-  padding-left: 260px;
+  padding-left: 360px; /*控制页面布局用，大概是中心部分距左侧距离，原260，改为360*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1101,31 +1101,31 @@ footer .copyright {
 }
 
 .post {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  min-height: 11rem;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  overflow: hidden;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
-          box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    min-height: 11rem;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
 }
 
 .post:hover {
@@ -1249,7 +1249,8 @@ a.newer-posts:hover {
 }
 
 .page-footer {
-  display: -webkit-box;
+
+       display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1262,10 +1263,10 @@ a.newer-posts:hover {
           flex-wrap: wrap;
   padding-bottom: 30px;
   margin: 30px 0;
-  border-bottom: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0; 
 }
 
-.page-footer .page-share {
+/*.page-footer .page-share { 一些分享选项
   margin-bottom: 10px;
   text-align: left;
 }
@@ -1282,9 +1283,9 @@ a.newer-posts:hover {
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
-}
+}*/
 
-.page-footer .page-share a:first-child {
+/* .page-footer .page-share a:first-child {
   margin-left: 0;
 }
 
@@ -1304,10 +1305,10 @@ a.newer-posts:hover {
 
 .page-footer .page-tag a:hover {
   text-decoration: underline;
-}
+} */
 
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
-.blog-tags {
+/*.blog-tags {
   width: 100%;
   background-color: #ffffff;
   padding: 0 20px 20px;
@@ -1361,9 +1362,9 @@ a.newer-posts:hover {
   text-decoration: underline;
   opacity: .8;
 }
-
+*/
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
-/* Medium Devices, Desktops */
+/* Medium Devices, Desktops，大概关于不同设备的页面布局 */
 @media only screen and (max-width: 992px) {
   .post {
     width: 48%;
